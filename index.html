@@ -132,7 +132,7 @@ function show(n){document.querySelectorAll('.s').forEach(function(e){e.classList
 document.querySelectorAll('[data-next]').forEach(function(b){b.onclick=function(){$('lt').classList.remove('on');show(cur+1)}});
 function slot(i,r){var d=document.createElement('div');d.className='ph';d.style.setProperty('--r',r+'deg');
  var im=document.createElement('i');im.textContent='photo '+(i+1);d.appendChild(im);
- var t=new Image();t.onload=function(){im.textContent='';im.style.backgroundImage='url('+(i+1)+'.jpg)'};t.src=(i+1)+'.jpg';return d}$('nm').textContent=C.name;
+var t=new Image();t.onload=function(){im.textContent='';im.style.backgroundImage='url('+(i+1)+'.jpg)'};t.src=(i+1)+'.jpg';return d}$('nm').textContent=C.name;
 $('go').onclick=$('watch').onclick=function(){$('watch').classList.add('go');setTimeout(function(){show(1);confetti()},750)};
 /* letter */
 $('env').onclick=function(){var e=$('env');if(e.classList.contains('open'))return;e.classList.add('open');
